@@ -13,10 +13,13 @@ Gem::Specification.new do |s|
   s.email    = 'paul@pdwilliams.net'
   s.license  = 'MIT'
 
-  s.files    = Dir.chdir(File.expand_path(__dir__)) do
+  s.executables = 'magicseaweed'
+  s.files       = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0")
                      .reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
+
+  s.add_dependency 'thor'
 
   s.add_development_dependency 'bundler', '~> 2.0'
   s.add_development_dependency 'pry', '~> 0.12.0'
