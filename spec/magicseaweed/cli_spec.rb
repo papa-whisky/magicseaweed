@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe Magicseaweed::CLI do
+  let(:cli) { described_class.new }
+
   describe '#hello' do
-    subject(:hello) { described_class.new.hello(name) }
+    subject(:hello) { cli.hello(name) }
 
     context 'when NAME is "Ja Rule"' do
       let(:name) { 'Ja Rule' }
