@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'magicseaweed'
+require 'webmock/rspec'
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = '.rspec_status'
@@ -10,3 +11,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+WebMock.disable_net_connect!
