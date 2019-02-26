@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'magicseaweed'
+require 'pry'
 require 'webmock/rspec'
 
 RSpec.configure do |config|
