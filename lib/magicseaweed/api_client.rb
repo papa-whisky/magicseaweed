@@ -47,9 +47,8 @@ module Magicseaweed
 
     def fields_query
       return '' unless fields
-      raise Error, 'fields must be passed as an array' unless fields.is_a? Array
 
-      "fields=#{fields.join(',')}&"
+      "fields=#{[fields].flatten.join(',')}&"
     end
 
     def units_query
