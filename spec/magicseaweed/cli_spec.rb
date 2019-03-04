@@ -3,13 +3,25 @@
 RSpec.describe Magicseaweed::CLI do
   let(:cli) { described_class.new }
 
-  describe '#hello' do
-    subject(:hello) { cli.hello(name) }
+  describe '#forecast' do
+    subject(:forecast) { cli.forecast(api_key, spot_id) }
 
-    context 'when NAME is "Ja Rule"' do
-      let(:name) { 'Ja Rule' }
+    let(:api_key) { 'api_key' }
+    let(:spot_id) { 'spot_id' }
+    let(:api_client) { Magicseaweed::APIClient.new(api_key: api_key) }
 
-      specify { expect { hello }.to output("Hello #{name}\n").to_stdout }
+    before do
+      allow(Magicseaweed::APIClient).to receive(:new)
+        .with(api_key: api_key)
+        .and_return(api_client)
+
+      allow(api_client).to receive(:get_forecast)
+        .with(spot_id: spot_id)
+        .and_return('forecast')
+    end
+
+    it 'prints a basic forecast' do
+      expect { forecast }.to output("forecast\n").to_stdout
     end
   end
 end
