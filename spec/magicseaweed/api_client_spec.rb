@@ -41,7 +41,7 @@ RSpec.describe Magicseaweed::APIClient do
     end
 
     context 'when fields are specified' do
-      let(:fields) { ['timestamp'] }
+      let(:fields) { [:timestamp] }
       let(:query) { super().merge('fields' => 'timestamp') }
       let(:fixture_filename) { :success_timestamp_only }
 

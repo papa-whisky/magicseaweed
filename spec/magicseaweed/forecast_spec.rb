@@ -17,7 +17,7 @@ RSpec.describe Magicseaweed::Forecast do
         .with(api_key: 'api_key').and_return(api_client)
 
       allow(api_client).to receive(:get_forecast)
-        .with(spot_id: 'spot_id', fields: 'localTimestamp,solidRating')
+        .with(spot_id: 'spot_id', fields: %i[localTimestamp solidRating])
         .and_return(JSON.parse(fixture_response_body(:success)))
     end
 

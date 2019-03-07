@@ -35,7 +35,7 @@ module Magicseaweed
 
     def forecast
       api_client
-        .get_forecast(spot_id: spot_id, fields: 'localTimestamp,solidRating')
+        .get_forecast(spot_id: spot_id, fields: %i[localTimestamp solidRating])
     end
 
     def api_client
