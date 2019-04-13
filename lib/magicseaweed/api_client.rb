@@ -18,8 +18,8 @@ module Magicseaweed
     def get_forecast(spot_id:, fields: nil)
       @spot_id = spot_id
       @fields = fields
-      @response = Net::HTTP.get_response(forecast_uri)
-      handle_response
+
+      Net::HTTP.get_response(forecast_uri).then(&method(:handle_response))
     end
 
     private
@@ -28,7 +28,6 @@ module Magicseaweed
     attr_reader :units
     attr_reader :spot_id
     attr_reader :fields
-    attr_reader :response
 
     def forecast_uri
       URI::HTTPS.build(
@@ -58,7 +57,7 @@ module Magicseaweed
       "units=#{units}&"
     end
 
-    def handle_response
+    def handle_response(response)
       raise Error, response.msg unless response.is_a? Net::HTTPSuccess
 
       body = JSON.parse(response.body)
