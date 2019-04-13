@@ -1,4 +1,4 @@
-# Magicseaweed CLI
+# Magicseaweed CLI · [![License](https://badgen.net/badge/license/MIT/blue)](https://github.com/papa-whisky/magicseaweed/blob/master/LICENSE.txt) [![RubyGems](https://badgen.net/rubygems/v/magicseaweed)](https://rubygems.org/gems/magicseaweed) [![CircleCI](https://badgen.net/circleci/github/papa-whisky/magicseaweed/master)](https://circleci.com/gh/papa-whisky/magicseaweed/tree/master)
 
 [![Powered by Magicseaweed](https://im-1-uk.msw.ms/msw_powered_by.png)](https://magicseaweed.com)
 
