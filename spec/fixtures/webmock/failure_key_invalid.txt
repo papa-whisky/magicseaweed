@@ -1,0 +1,18 @@
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.14.0
+Date: Tue, 26 Feb 2019 11:59:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: mswrelease_variant=b; path=/; domain=.magicseaweed.com; expires=Thu, 28-Mar-2019 11:59:34 GMT
+Set-Cookie: MSW_region=47; expires=Thu, 28-Mar-2019 11:59:34 GMT; path=/; domain=.magicseaweed.com
+X-MSW-API-Version: 3;
+Cache-Control: no-transform
+Expires: Tue, 26 Feb 2019 11:59:34 GMT
+Vary: Accept-Encoding
+X-MSW-Server: maluku
+X-GeoIP: AU
+X-MSW-Split: msw_release_b
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Security-Policy-Report-Only: default-src https: blob: 'unsafe-inline' 'unsafe-eval'; img-src https: data:; media-src https: blob:; object-src https: blob:; report-uri https://csp-report.magicseaweed.com/api/csp-report/
+

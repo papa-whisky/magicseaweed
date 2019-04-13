@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.0
+Date: Tue, 26 Feb 2019 11:55:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+Set-Cookie: mswrelease_variant=b; path=/; domain=.magicseaweed.com; expires=Thu, 28-Mar-2019 11:55:03 GMT
+Set-Cookie: MSW_region=47; expires=Thu, 28-Mar-2019 11:55:03 GMT; path=/; domain=.magicseaweed.com
+X-MSW-API-Version: 3;
+Set-Cookie: MSW_unitgroup=uk; expires=Thu, 28-Mar-2019 11:55:03 GMT; path=/; domain=.magicseaweed.com
+X-MSW-API-CACHE: Miss
+Cache-Control: no-transform
+Expires: Tue, 26 Feb 2019 11:55:03 GMT
+Vary: Accept-Encoding
+X-MSW-Server: maluku
+X-GeoIP: AU
+X-MSW-Split: msw_release_b
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Security-Policy-Report-Only: default-src https: blob: 'unsafe-inline' 'unsafe-eval'; img-src https: data:; media-src https: blob:; object-src https: blob:; report-uri https://csp-report.magicseaweed.com/api/csp-report/
+Access-Control-Allow-Credentials: true
+
+[{"timestamp":1551106800},{"timestamp":1551117600},{"timestamp":1551128400},{"timestamp":1551139200},{"timestamp":1551150000},{"timestamp":1551160800},{"timestamp":1551171600},{"timestamp":1551182400},{"timestamp":1551193200},{"timestamp":1551204000},{"timestamp":1551214800},{"timestamp":1551225600},{"timestamp":1551236400},{"timestamp":1551247200},{"timestamp":1551258000},{"timestamp":1551268800},{"timestamp":1551279600},{"timestamp":1551290400},{"timestamp":1551301200},{"timestamp":1551312000},{"timestamp":1551322800},{"timestamp":1551333600},{"timestamp":1551344400},{"timestamp":1551355200},{"timestamp":1551366000},{"timestamp":1551376800},{"timestamp":1551387600},{"timestamp":1551398400},{"timestamp":1551409200},{"timestamp":1551420000},{"timestamp":1551430800},{"timestamp":1551441600},{"timestamp":1551452400},{"timestamp":1551463200},{"timestamp":1551474000},{"timestamp":1551484800},{"timestamp":1551495600},{"timestamp":1551506400},{"timestamp":1551517200},{"timestamp":1551528000}]
